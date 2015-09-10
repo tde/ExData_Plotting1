@@ -26,8 +26,9 @@ showPlot3 <- function(df = NULL, openPng = T)
   }
 }
 
-if (exists("enblePlotting")) {
-  if (enblePlotting == T) {
-    showPlot3(ylab = "Global Active Power (kilowatts)" )
-  }
-}
+if (exists("enblePlotting") == F) {
+  showPlot3()
+} else if ( enblePlotting == T ) {
+  showPlot3()
+} 
+

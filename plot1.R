@@ -22,8 +22,8 @@ showPlot1 <- function(df = NULL, openPng = T)
   }
 }
 
-if (exists("enblePlotting")) {
-  if (enblePlotting == T) {
-    showPlot1()
-  }
+if (exists("enblePlotting") == F) {
+  showPlot1()
+} else if ( enblePlotting == T ) {
+  showPlot1()
 }

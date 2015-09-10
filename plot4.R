@@ -7,7 +7,7 @@ source('plot3.R')
 
 enblePlotting = T
 
-#df <- getHouseholdData()
+df <- getHouseholdData()
 
 #function to plot Voltage vs DateTime
 showPlotVoltage <- function(df){
@@ -31,5 +31,5 @@ showPlotVoltage(df)
 showPlot3(df = df, openPng = F)
 showPlotPower(df)
 
-#plotting done, save the file.
+#Close 
 dev.off()
